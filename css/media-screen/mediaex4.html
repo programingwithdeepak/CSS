@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float design</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .clr{
+            clear: both;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+
+        .head{
+            width: 99%;
+            height: 40px;
+            background-color: green;
+            margin: 0.5%;
+
+        }
+        .left{
+            width: 29%;
+           height: 470px;
+             background-color: antiquewhite;  
+             margin: .5%;
+             float: left;
+                 }
+                 .box{
+                    border-bottom: 2px solid;
+                    height: 10vh;
+                    text-align: center;
+                 }
+                 .box a{
+                    line-height: 10vh;
+                    text-decoration: none;
+                    font-size: 30px;
+                 }
+                 .center{
+                    width: 39%;
+                   height: 470px;
+                    margin: .5%;
+                    background-color: yellow;
+                    float: left;
+                 }
+                 .right{
+                    width: 29%;
+                    height: 470px;
+                    margin: .5%;
+                    background-color: red;
+                    float: left;
+                 }
+                 .footer{
+                    width: 99%;
+                    height: 40px;
+                    background-color: green;
+                    margin: .5%;
+                 }
+                 @media (max-width:1080px) {
+                     .left{
+                   width: 29%;
+                   height: 470px;
+                   background-color: antiquewhite;  
+                   margin: .5%;
+                   float: left;
+                 }
+                 .center{
+                    width: 69%;
+                    height: 470px;
+                    margin: .5%;
+                    background-color: yellow;
+                    float: left;
+                 }
+                 .right{
+                     width: 99%;
+                    height: 100px;
+                    margin: .5%;
+                    background-color: red;
+                 }
+                 .footer{
+                    width: 99%;
+                    height: 40px;
+                    background-color: green;
+                    margin: .5%;
+                 }
+                    
+                 }
+
+                 /* phone */
+                  @media (max-width:560px) {
+                     .left{
+                   width: 99%;
+                   height: 470px;
+                   background-color: antiquewhite;  
+                   margin: .5%;
+                 }
+                 .center{
+                    width: 99%;
+                    height: 470px;
+                    margin: .5%;
+                    background-color: yellow;
+                 }
+                 .right{
+                     width: 99%;
+                    height: 100px;
+                    margin: .5%;
+                    background-color: red;
+                 }
+                 .footer{
+                    width: 99%;
+                    height: 40px;
+                    background-color: green;
+                    margin: .5%;
+                 }
+                    
+                 }
+                 
+    </style>
+</head>
+<body>
+    <!-- <div class="wrapper"> -->
+        <div class="head"></div>
+        <div class="left ">
+            <div class="box"><a href="#">link</a></div>
+            <div class="box"><a href="#">link</a></div>
+            <div class="box"><a href="#">link</a></div>
+            <div class="box"><a href="#">link</a></div>
+            <div class="box"><a href="#">link</a></div>
+            <div class="box"><a href="#">link</a></div>
+            <div class="box"><a href="#">link</a></div>
+        </div>
+        <div class="center "></div>
+        <div class="right"></div>
+        <div class="clr"></div>
+        <div class="footer"></div>
+    <!-- </div> -->
+</body>
+</html>

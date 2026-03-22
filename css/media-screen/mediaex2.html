@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Boxes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            float: left;
+            margin: .5%;
+            height: 20vh;
+            background-color: gray;
+        }
+          @media (max-width:1366px) {
+            .box {
+                width: 24%;
+        
+            }
+        }
+        @media (max-width:1080px) {
+            .box {
+                width: 49%;
+        
+            }
+        }
+
+        @media (max-width:560px) {
+            .box {
+                width: 99%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    
+</body>
+
+</html>
