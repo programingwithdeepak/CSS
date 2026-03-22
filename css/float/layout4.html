@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .wrapper {
+            width: 90%;
+            height: 600px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Top Left (red blocks area) */
+        .top-left {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            background: black;
+        }
+
+        /* Top Right (smaller red blocks area) */
+        .top-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            background: black;
+        }
+
+        /* Bottom Left (big yellow block) */
+        .bottom-left {
+            background: yellow;
+        }
+
+        /* Bottom Right (multiple yellow blocks) */
+        .bottom-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            background: black;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Top Row -->
+        <div class="row">
+            <div class="top-left">
+                <div class="red"></div>
+                <div class="red"></div>
+                <div class="red"></div>
+                <div class="red"></div>
+            </div>
+            <div class="top-right">
+                <div class="red"></div>
+                <div class="red"></div>
+                <div class="red"></div>
+                <div class="red"></div>
+                <div class="red"></div>
+                <div class="red"></div>
+            </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="row">
+            <div class="bottom-left"></div>
+            <div class="bottom-right">
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

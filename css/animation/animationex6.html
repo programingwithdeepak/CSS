@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+             margin: 25vh auto; 
+        }
+
+        .top {
+            width: 50%;
+            height: 80px;
+            background-color: blue;
+            margin-bottom: 20px;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+    
+        }
+
+        .left,
+        .right {
+            width: 200px;
+            height: 200px;
+        }
+
+        .left {
+            background-color: red;
+        }
+
+        .right {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top animate__animated animate__bounceInDown"></div>
+        <div class="main">
+            <div class="left  animate__animated animate__bounceInLeft"></div>
+            <div class="left  animate__animated animate__bounceInLeft"></div>
+            <div class="right animate__animated animate__bounceInRight"></div>
+            <div class="right animate__animated animate__bounceInRight"></div>
+        </div>
+    </div>
+</body>
+
+</html>

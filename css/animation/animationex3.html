@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+
+        }
+        .light {
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+            box-sizing: border-box;
+            margin:  20vh auto;
+            animation-name: light;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        
+        }
+
+        @keyframes light {
+            0% {
+                background-color: aqua;
+            
+                
+               
+            }
+
+            25% {
+            
+                border-top: 10px solid green;
+                
+               
+            }
+
+            50% {
+                border-top: 10px solid green;
+                border-right: 10px solid teal;
+                
+                
+            }
+
+            75% {
+                border-top: 10px solid green;
+                border-right: 10px solid teal;
+                border-bottom: 10px solid black;
+               
+               
+            }
+
+            100% {
+                 border-top: 10px solid green;
+                border-right: 10px solid teal;
+                border-bottom:  10px solid black;
+                border-left: 10px solid blue;
+                
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="light"></div>
+
+</body>
+
+</html>

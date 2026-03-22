@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        
+
+        html {
+  --s: 105px; /* control the size*/
+  --c1: #b9b9b9;
+  --c2: #dcdcdc;
+  --c3: #fafafa;
+  
+  background:
+    conic-gradient(from 75deg,var(--c1)   15deg ,var(--c2) 0 30deg ,#0000 0 180deg,
+                              var(--c2) 0 195deg,var(--c1) 0 210deg,#0000 0) 
+       calc(var(--s)/2) calc(.5*var(--s)/tan(30deg)),
+    conic-gradient(var(--c1)   30deg ,var(--c3) 0 75deg ,var(--c1) 0 90deg, var(--c2) 0 105deg,
+                   var(--c3) 0 150deg,var(--c2) 0 180deg,var(--c3) 0 210deg,var(--c1) 0 256deg,
+                   var(--c2) 0 270deg,var(--c1) 0 286deg,var(--c2) 0 331deg,var(--c3) 0);
+  background-size: var(--s) calc(var(--s)/tan(30deg));
+}
+
+
+/*  */
+
+.loader{
+    position: absolute;
+    left: 90%;
+}
+.loader {
+  --s: 25px;
+  --g :5px;  
+  
+  width: calc(3*(1.353*var(--s) + var(--g)));
+  display: grid;
+  justify-items: end;
+  aspect-ratio: 3;
+  overflow: hidden;
+  --_m: linear-gradient(90deg,#0000,#000 15px calc(100% - 15px),#0000);
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+}
+.loader:before { 
+  content: "";
+  width: 200%;
+  background:
+    linear-gradient(90deg,#ff1818 50%,#0000 0),
+    conic-gradient(from -90deg at var(--s) calc(0.353*var(--s)),
+      #fff 135deg,#666 0 270deg,#aaa 0); 
+  background-blend-mode: multiply;
+  --_m:
+    linear-gradient(to bottom right,
+       #0000 calc(0.25*var(--s)),#000 0 calc(100% - calc(0.25*var(--s)) - 1.414*var(--g)),#0000 0),
+    conic-gradient(from -90deg at right var(--g) bottom var(--g),#000 90deg,#0000 0);
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  background-size:   calc(100%/3) 100%, calc(100%/6) 100%;
+  -webkit-mask-size: calc(100%/6) 100%;
+          mask-size: calc(100%/6) 100%;
+  -webkit-mask-composite: source-in;
+          mask-composite: intersect;
+  animation: l10 1s infinite linear;
+}
+@keyframes l10 {
+  to {transform:translate(calc(100%/3))}
+}
+
+/*  */
+
+.loader-1 {
+  display: inline-grid;
+  width: 80px;
+  aspect-ratio: 2;
+  box-sizing: content-box;
+  border-bottom: 8px solid #0000; 
+  background: 
+    linear-gradient(90deg,#0B486B 50%,#C02942 0) 
+    50% 100%/52% 8px border-box repeat-x;
+  animation: l8-0 1s linear infinite;
+}
+.loader-1:before {
+  content:"";
+  margin: 0 25%;
+  border-radius: 50%;
+  background: repeating-conic-gradient(#C02942 0 60deg,#0B486B 0 120deg);
+  animation: l8-1 1s linear infinite;
+}
+@keyframes l8-0 {to{background-position: -58% 100%}}
+@keyframes l8-1 {to{rotate: 120deg}}
+
+
+/*  */
+
+
+.ribbon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+
+  left: 35%;
+  top: 0;
+}
+.ribbon {
+  --s: 1.8em; /* the ribbon size */
+  --d: .6em;  /* the depth */
+  --c: .8em;  /* the cutout part */
+  
+  padding: var(--d) calc(var(--s) + 2*var(--d) + .5em) 0;
+  line-height: 1.8;
+  background: 
+    linear-gradient(90deg,#0004 var(--d),#0000 0 calc(100% - var(--d)),#0004 0) 
+     50% 100%/calc(100% - 2*(var(--s) + var(--d))) calc(100% - var(--d)),
+    conic-gradient(from -45deg at 50% 150%,#0004 25%,#0008 0)
+     var(--s)              0/calc(3*var(--d)) var(--d),
+    conic-gradient(from -45deg at 50% 150%,#0004 25%,#0008 0)
+     calc(100% - var(--s)) 0/calc(3*var(--d)) var(--d);
+  background-repeat: no-repeat;
+  background-color: #D95B43; /* the main color */
+  clip-path: polygon(0 100%,calc(var(--s) + var(--d)) 100%,calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + 2*var(--d)) calc(100% - var(--d)),calc(var(--s) + 2*var(--d)) 100%,calc(100% - var(--s) - 2*var(--d)) 100%,calc(100% - var(--s) - 2*var(--d)) calc(100% - var(--d)),calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(100% - var(--s) - var(--d)) 100%,100% 100%,calc(100% - var(--c)) calc(50% + var(--d)/2),100% var(--d),calc(100% - var(--s)) var(--d),calc(100% - var(--s)) 0,calc(100% - var(--s) - 3*var(--d)) 0,calc(100% - var(--s) - 3*var(--d)) var(--d),calc(var(--s) + 3*var(--d)) var(--d),calc(var(--s) + 3*var(--d)) 0,var(--s) 0,var(--s) var(--d),0 var(--d),var(--c) calc(50% + var(--d)/2));
+  width: fit-content;
+}
+    </style>
+</head>
+<body>
+    <div class="loader"></div> 
+    <div class="loader-1"></div> 
+ <div class="ribbon">This is background image</div> 
+    
+</body>
+</html>

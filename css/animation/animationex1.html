@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border-radius: 50%;
+            margin: 23vh auto;
+            animation-name: light;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes light {
+            from {
+                background-color: aquamarine;
+                 border-radius: 50%;
+            }
+
+            to {
+                background-color: gray;
+                 border-radius: 10%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="light"></div>
+</body>
+
+</html>

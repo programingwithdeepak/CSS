@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .wrapper{
+          width: 100%;
+          
+        }
+        .header{
+            width: 100%;
+            background-color: black;
+            padding: 1% 5%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .header h1{
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+        .link-div{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            
+        }
+        .link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: linear-gradient(90deg, #00c6ff, #0072ff);
+            border-radius: 10px;
+            border: 1px solid #0a192f;
+            width: 19.2%;
+            height: 40Px;
+        }
+        .link a{
+            text-decoration: none;
+            color: #000000;
+        }
+        .main{
+            display: flex;
+            flex-flow:  row wrap;
+            justify-content: space-between;
+        }
+        .left{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            justify-content: start;
+            border: 1px solid whitesmoke;
+            width: 79.9%;
+        }
+        .main-banner img{
+            width: 100%;
+            height: 550px;
+        }
+        .paragraph-content{
+            text-align: justify;
+        }
+        .right{
+            display: flex;
+            flex-flow: column wrap;
+            width: 19.2%;
+        }
+        .right-banner img{
+               width: 99%;
+               height: 250px;
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            padding: 1% 5%;
+            justify-content: end;
+            margin-top: 10px;
+            background-color: black;
+            height: 80px;
+        }
+        .footer h3{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>My website</h1>
+        </div>
+        <div class="link-div">
+            <div class="link"><a href="#">Page1</a></div>
+            <div class="link"><a href="#">Page2</a></div>
+            <div class="link"><a href="#">Page3</a></div>
+            <div class="link"><a href="#">Page4</a></div>
+            <div class="link"><a href="#">Page5</a></div>
+        </div>
+       <div class="main">
+        <!-- left side -->
+        <div class="left">
+            <div class="main-banner">
+                <img src="http://127.0.0.1:5500/HTML/TABLE/image/main0.avif" alt="">
+            </div>
+            <div class="paragraph-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat adipisci necessitatibus fugit veritatis
+                    neque qui nobis atque exercitationem quae culpa quasi dolorem ex velit laborum, optio repellat, assumenda
+                    eius consequatur saepe cumque sit? At doloremque dolorem, dolore consequuntur sed laboriosam deserunt alias
+                    dolores repellendus atque? Rem ad animi veniam minus exercitationem atque deserunt itaque porro repellat
+                    illum, iusto vero velit hic, repellendus repudiandae! Sint recusandae labore nesciunt ea inventore sit culpa
+                    amet sequi! Aspernatur, nihil. Tempora cupiditate rem unde nesciunt voluptatibus repellendus, iste a. Vel
+                    aliquid, quasi adipisci suscipit nihil doloribus molestias quia voluptatum tempora laudantium hic sed,
+                    dolore dolorum debitis iure consequatur exercitationem magnam, sapiente alias? Nam cumque, labore inventore
+                    consectetur unde repellat exercitationem dicta. Ab debitis culpa, numquam libero hic nam, sint, minima
+                    consectetur ea veritatis rerum architecto explicabo doloremque? Vel voluptatum reprehenderit illum aliquam,
+                    inventore est, blanditiis id veniam alias necessitatibus fugit quos excepturi architecto facere atque,
+                    consectetur repellat fuga. Libero, quo? Earum odio temporibus mollitia incidunt sapiente facilis ad
+                    excepturi deserunt non dolorum magni distinctio voluptates omnis eos maiores hic atque repudiandae, vel quis
+                    ullam. Ad quibusdam sapiente aspernatur id eveniet optio ipsa eligendi ratione natus. Et nulla minima
+                    consequuntur iste. Consectetur magni, corrupti fugiat reprehenderit dolore molestias quis. Facere accusamus
+                    adipisci cupiditate corporis dolorum cumque qui rerum, reprehenderit magnam sint cum quas vitae sunt quos?
+                    Atque iste, dicta in pariatur repellendus, cupiditate porro quidem nam nihil libero reiciendis, animi harum
+                    nobis fuga totam voluptatibus facilis maxime accusantium numquam consequuntur quas? Libero sit non vero
+                    ipsum!</p>
+            </div>
+        </div>
+        
+        <!-- right -->
+        <div class="right">
+            <div class="right-banner">
+                <img src="http://127.0.0.1:5500/HTML/TABLE/image/main0.avif" alt="">
+            </div>
+            <hr>
+            <marquee behavior="alternate" direction="right"> this is aside</marquee>
+            <hr>
+        </div>
+       </div>
+
+          <!-- footer -->
+           <div class="footer">
+            <h3>COPYRIGHT © 2025</h3>
+           </div>
+    </div>
+</body>
+</html>
